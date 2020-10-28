@@ -12,7 +12,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -71,7 +71,7 @@ button:focus {
 .header-container,
 .container {
   margin: 0 auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -207,6 +207,7 @@ button:focus {
   line-height: 16px;
   letter-spacing: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .featchers-details {
   color: var(--tittle-text-color);
@@ -270,7 +271,6 @@ button:focus {
   letter-spacing: 0.03em;
   margin-top: 30px;
   margin-left: auto;
-  margin-bottom: 10px;
   margin-right: auto;
 }
 .our-team-list,
@@ -278,19 +278,20 @@ button:focus {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 10px;
 }
 
 .position {
   color: var(--tittle-text-color);
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -298,22 +299,30 @@ button:focus {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-list {
+/* .footer-list {
   list-style: none;
+} */
+.footer-link {
+  display: inline-block;
 }
-.adress {
+
+.footer-link.adress {
   color: var(--primary-white-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
 }
-.footer-contacts {
+.footer-link.mail,
+.footer-link.tel {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.footer-link.adress,
+.footer-link.mail {
   margin-bottom: 9px;
 }
 .footer-logo {
@@ -407,7 +416,7 @@ button:focus {
   width: 372px;
 }
 .ExamplesProjects-list .list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 .ExamplesProjects-list p {
   font-size: 16px;
