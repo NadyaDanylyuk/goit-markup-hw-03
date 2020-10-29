@@ -143,7 +143,7 @@ button:focus {
 .hero {
   background-color: var(--footer-hero-color);
   text-align: center;
-  padding-bottom: 94px;
+  padding-bottom: 200px;
   padding-top: 200px;
 }
 
@@ -166,7 +166,6 @@ button:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin-bottom: 200px;
 }
 
 .btn.hero {
@@ -179,7 +178,6 @@ button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   padding: 10px 32px;
-  margin-bottom: 200px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
